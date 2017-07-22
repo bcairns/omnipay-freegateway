@@ -58,3 +58,7 @@ The critical (and SilverShop-specific) integration logic takes place in `Payment
 2. It adds a validation step to ensure the user cannot select an invalid payment option.
  
 If you are using the FreeGateway on a platform other than SilverShop, you will need to find a way to implement the above logic on the platform you are using.
+
+## Other Modules
+
+* This works well with SilverShop's [Discounts](https://github.com/silvershop/silvershop-discounts) module; if a discount or coupon reduces the order total to zero then the free payment option will be enabled during checkout.
